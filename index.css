@@ -36,12 +36,21 @@ div.topic {
   margin: 0 0 0.200em;
 }
 
+div.featured_post_title {
+  color: black;
+  font: helvetica, arial;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 0 0 0;
+}
+
 div.post_title {
   color: black;
   font: helvetica, arial;
   font-size: 30px;
   font-weight: bold;
   margin: 0 0 0 0;
+  max-width: 200px;
 }
 
 h2 {
@@ -118,7 +127,7 @@ width: 300px;
 }
 
 body#background_profile {
-  background-image: url(../imgs/profile-home.jpg);
+  background-image: url(imgs/profile-home.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
