@@ -74,6 +74,7 @@ li {
 
 section.featured {
   padding-top: 60px;
+  margin-bottom: 80px;
 }
 
 article {
@@ -95,7 +96,9 @@ article {
 
 img.other_pictures {
   width: 230px;
-  min-height: 158px;
+  max-height: 158px;
+  width: auto;
+  height: auto;
 }
 
 .other_post_left {
@@ -140,10 +143,23 @@ html {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 400px;
+  max-width: 200px;
 }
 
 .blog-post-template-header {
   display: block;
   text-align: center;
+}
+
+.code {
+  background-color: gray;
+  padding: 20px
+}
+
+footer {
+  clear: both;
+  margin-top: 100px;
+}
+
+.other_posts {
 }

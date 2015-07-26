@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+    For Relaxing Times, Make It Coding Time
+    </title>
+    <link rel="stylesheet" type="text/css" href="../index.css">
+  </head>
+
+<body>
+
+    <nav>
+      <ul>
+          <li class="navpoint"><a href="../index.html">Home</a></li>
+          <li class="navpoint"><a href="../about.html">About</a></li>
+          <li class="navpoint"><a href="../blog.html">Blog</a></li>
+          <li class="navpoint"><a href="../projects.html">Projects</a></li>
+      </ul>
+    </nav>
+
+<main>
+  <section class="blog-post-template">
+    <h1>Post</h1>
+     <img src="../imgs/chess.jpg" class="illustration" />
+      <div>
+        <header class="blog-post-template-header">
+          <div class="topic">
+          Technical
+          </div>
+          <div class="featured_post_title">
+            Life in Structure
+          </div>
+          <h2><em>by</em> Santa Maria, Steven * July 24, 2015</h2>
+        </header>
+
+  <p>
+    I feel that no matter how crazy or upsetting our world may seem at times as we read the news, it's comforting that there's always an aspect of structure somewhere even in the littlest things. For example, as I'm sitting in this San Francisco cafe, I see a series of artwork horizontally across.
+</p>
+  <img src class="illustration" ="../imgs/arrays_cafe.jpg" />
+<p>
+  What's so special (or ordinary) about this? Well, it's an easy way to present art--to put another way, information. To take a step further, let's say I wanted to buy one of artwork; I could refer to the chosen one by a digit in the series (e.g. "I'd like to buy the 1st one from the left"). It's a logical, sane, and easy way to communicate. Arrays in the programming sense function much the same way.
+</p>
+<p>
+  An array is a structured set of data or values connected to an index.
+</p>
+<p>
+  Why are arrays helpful? We can refer to an array as a single variable and we can call for individual members, or element, of an array according to an index. So if you want a specific value, we can call the index.
+</p>
+<section class="code">
+  array = ["This", "is", "an", "array"]<br>
+  puts array[0]<br>
+  puts array[1]<br>
+  puts array[2]<br>
+  puts array[3]<br>
+
+  <samp>
+    ---OUTPUT---<br>
+    This<br>
+    is<br>
+    an<br>
+    array
+  </samp>
+</section>
+<p>
+  Arrays however can have more than one dimension. A one dimension array is a vector and a two dimension one is a matrix, like the following example:
+</p>
+<section class="code">
+  matrix = [["First","element"],["Second","Element"],["Third", "element"]]
+</section>
+<p>
+  Sometimes, an array data structure doesn't make sense. An English dictionary, for example, wouldn't benefit terribly much from an array. Instead, we could leverage hashes to structure a word-to-definition relationship.
+</p>
+<p>
+  A hash, broadly-speaking, is a data structure for key and value pairs. It's similar to an array in that our index is the key and with respect to a value.
+</p>
+<p>
+  Here is an another example of a hash:
+</p>
+<section class="code">
+  hash = { "ca" => "California", <br>
+                "tx" => "Texas", <br>
+                "or" => "Oregon"<br>
+  }
+</section>
+<p>
+  In this case, if I called on the key "ca", it yields the value "California".
+</p>
+<p>
+  Hashes help us retrieve information even if the key-value table is unordered. That is, if we called on a key, it would yield our value.
+</p>
+<p>
+  As we delve deeper into our education in programming, we begin to see the world differently. Perhaps we begin to see the world in a more systematic and logical sense, which is a perspective that will hopefully yield value for our future customers.
+</p>
+      </div>
+  </section>
+
+  <a href="../blog.html"><button>View More Posts</button></a>
+</main>
+
+</html>
