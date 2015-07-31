@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+    For Relaxing Times, Make It Coding Time
+    </title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+
+<body>
+
+    <nav>
+      <ul>
+          <li class="navpoint"><a href="index.html">Home</a></li>
+          <li class="navpoint"><a href="about.html">About</a></li>
+          <li class="navpoint"><a href="blog.html">Blog</a></li>
+          <li class="navpoint"><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+
+<main>
+  <section class="blog-post-template">
+    <h1>Post</h1>
+     <img src="imgs/vinyl.jpg" width="170px" />
+      <div>
+        <header class="blog-post-template-header">
+          <div class="topic">
+          Technical
+          </div>
+          <div class="featured_post_title">
+            Cycling Through Music
+          </div>
+          <h2><em>by</em> Santa Maria, Steven * July 31, 2015</h2>
+        </header>
+        <p>
+          I recently bought a vinyl player to play some of my dad's LPs including albums by ol' Frank Sinatra, Art Blakey and the Jazz Messengers, etc; it's a lot of great music and it's fun to get that spinning along with some glasses of whisky and friends. As trivial as it may sound, though, it's a challenge to skip to the next track. (Remember it's all analog and we got to lift the player needle on some new groove on the disk). CDs on the other hand have some advantages over LPs including automatic track skipping.
+        </p>
+        <p>
+          How do we bring an aspect of auto track skipping back to the world of programming and learn about a Ruby method?
+        </p>
+        <p>
+          Let's assume we had an array of music:
+        </p>
+        <p>
+          <code>album = %w{song1 song2 song3 song4}</code>
+        </p>
+        <p>
+          It's not the most prolific of albums but let's work with it. We can then use a method called ennumerable#cycle to cycle through the album.
+        </p>
+        <p>
+          <code>album.cycle(2) { |song| puts song}
+          ==> #print song1song2song3song4song1song2song3song4</code>
+        </p>
+        <p>
+          The song list cycles two times according to the integer argument we set to the method. Also, elements are assigned to the "song" variable, and is followed by a code block. We can optionally use an integer#next method to cycle through the songs individually.
+        </p>
+        <p><code>
+          song_list = album.cycle<br>
+          song_list.next ==> song1<br>
+          song_list.next ==> song2<br>
+          song_list.next ==> song3</code>
+        </p>
+        <p>
+          If we keep applying the #next method, eventually the songs will cycle through the album again.
+        </p>
+        <p>
+          So we learned a little about the iterative method called #cycle, another called #next. Hopefully this was helpful for you to get some context on how we can use these tools in Ruby.
+        </p>
+      </div>
+  </section>
+
+  <a href="index.html"><button>View More Posts</button></a>
+</main>
+
+</html>
