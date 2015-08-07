@@ -64,7 +64,7 @@ p {
   display: block;
 }
 p.other_post_description {
-  width: 230px;
+  width: 260px;
   height: 105px;
 }
 
@@ -95,9 +95,8 @@ article {
 }
 
 img.other_pictures {
-  width: 230px;
+  width: 270px;
   max-height: 158px;
-  width: auto;
   height: auto;
 }
 
@@ -111,22 +110,16 @@ img.other_pictures {
   padding-left: 20px;
 }
 
-#profile_photo {
-float: right;
-padding-left: 10px;
-width: 300px;
-}
-
 #home_text_overlay {
   box-sizing: border-box;
-  padding: 60px 20px 20px;
-  background-color: rgba(255,255,255,.8);
-  width: 400px;
+  padding: 45px 20px 20px;
+  background-color: rgba(255,255,255,.7);
+  width: 450px;
   height: 190px;
   float: right;
-  text-align: left;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
+  text-align: right;
+  font-family: "Bodoni", "Garamond", Arial;
+  font-size: 19px;
 }
 
 body#background_profile {
@@ -156,10 +149,20 @@ html {
   padding: 20px
 }
 
-footer {
-  clear: both;
-  margin-top: 100px;
+/**BLOG page**/
+#blog-html {
+  height: 950px;
 }
 
-.other_posts {
+/**ABOUT page**/
+#about_profile_photo {
+  padding-top: 80px;
+  width: 45%;
+}
+
+#about_profile_text {
+  padding-top: 60px;
+  padding-right: 20px;
+  float:left;
+  width: 45%;
 }
