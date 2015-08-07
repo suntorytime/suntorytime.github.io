@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+    For Relaxing Times, Make It Coding Time
+    </title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+
+<body>
+
+    <nav>
+      <ul>
+          <li class="navpoint"><a href="index.html">Home</a></li>
+          <li class="navpoint"><a href="about.html">About</a></li>
+          <li class="navpoint"><a href="blog.html">Blog</a></li>
+          <li class="navpoint"><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+
+<main>
+  <section class="blog-post-template">
+    <h1>Post</h1>
+     <img src="imgs/bingo.jpg" width="170px" />
+      <div>
+        <header class="blog-post-template-header">
+          <div class="topic">
+          Technical
+          </div>
+          <div class="featured_post_title">
+            Class is in Session
+          </div>
+          <h2><em>by</em> Santa Maria, Steven * August 7, 2015</h2>
+        </header>
+        <p>
+          Bingo. A timeless game of chance and profitable <a href="http://www.livingdharma.org/CurrentEvents/Obon2003Pics/Obon03-Bingo.jpeg">fundraisers for non-profits</a>. But! the game can be an awesome illustration of the value of Classes in Ruby.
+        </p>
+<p>
+          As with any bingo game, as a player, we need a board. Heck, I have one in my pocket right here:
+        </p>
+          <code>
+            board = <br>
+            [[47, 44, 71, 8, 88],<br>
+            [22, 69, 75, 65, 73],<br>
+            [83, 85, 97, 89, 57],<br>
+            [25, 31, 96, 68, 51],<br>
+            [75, 70, 54, 80, 83]]<br>
+          </code>
+<p>
+          Bingo boards look awful like arrays, don't they? This will come into play later in our code.
+</p>
+<p>
+          First we'll want to declare a new class. Let's call it "BingoBoard" and we'll initialize our pocket-sized board.
+        </p>
+          <code>
+            class BingoBoard<br><br>
+
+            def initialize(board)<br>
+              @bingo_board = board<br>
+            end
+          </code>
+          <p>
+          We can't have a bingo game without those balls that go round-and-round in the cage. Let's make a method for our BingoBoard class.
+          </p>
+          <code>
+          def generate_ball<br>
+            bingo_array = %w(b i n g o)<br>
+            @letter = bingo_array.sample<br>
+            @number = rand(100)<br>
+            puts "You got #{@letter}, #{@number}!"<br>
+          end
+          </code>
+          <p>
+          Equally crucial, we need a new method to check the result of "generate_ball" against the board. How do we do that? true to the programming world, there are many ways to do it. This is what I came up with:
+        </p>
+          <code>
+              def check<br>
+                raise ArgumentError, "You need to generate a ball<br>first!" if @letter == nil || @number == nil<br>
+
+                bingo_hash = { "b"=>0, "i"=>1, "n"=>2, "g"=>3, "o"=>4 }<br>
+                check_for_letter = bingo_hash[@letter]<br>
+                @bingo_board.map {|outside_element|<br>
+                if outside_element.kind_of?(Array)<br>
+                    outside_element[check_for_letter] = "X" if outside_element[check_for_letter] == @number<br>
+                end }<br>
+                @bingo_board.map { |outside_element| puts outside_element.inspect }<br>
+              end
+            </code>
+            <p>
+          For the sake of convenience, we'll want a third method to display our board. Let's call it "display_board".
+        </p>
+          <code>
+          def display_board<br>
+            @bingo_board.map { |outside_element| puts outside_element.inspect }<br>
+          end<br>
+          end # this ends the Class definition
+        </code>
+        <p>
+          It's a fair amount of code and I don't want to get into the details of it. What I do want to highlight however is how it all comes together. We have Class called BingoBoard that has all the functions required: a way to "generate_ball", to "check" the ball against the board, and a method to "display_board".
+</p>
+<p>
+          To put it another way, Classes help organize our code into more cohesive stories. The story is changed by invoking a different board!
+</p>
+<p>
+          Classes are sometimes hard to wrap our minds around at first. However, stick with them--! they're important for function and context!
+        </p>
+      </div>
+  </section>
+
+  <a href="index.html"><button>View More Posts</button></a>
+</main>
+
+</html>
