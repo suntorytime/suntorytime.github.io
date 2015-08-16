@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+    For Relaxing Times, Make It Coding Time
+    </title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+
+<body>
+
+    <nav>
+      <ul>
+          <li class="navpoint"><a href="index.html">Home</a></li>
+          <li class="navpoint"><a href="about.html">About</a></li>
+          <li class="navpoint"><a href="blog.html">Blog</a></li>
+          <li class="navpoint"><a href="viewmoreposts.html">Archive</a></li>
+          <li class="navpoint"><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+
+<main>
+  <section class="blog-post-template">
+    <h1>Post</h1>
+     <img src="imgs/oop.gif" width="170px" />
+      <div>
+        <header class="blog-post-template-header">
+          <div class="topic">
+          Technical
+          </div>
+          <div class="featured_post_title">
+            Object-Oriented and Functional Programming
+          </div>
+          <h2><em>by</em> Santa Maria, Steven * August 14, 2015</h2>
+        </header>
+        <p>
+          When I first thought about getting into a coding bootcamp like Dev Bootcamp, I didn't know the difference between one programming language from the next. I frankly got into Ruby as it was one of the default languages taught in DBC. I learned eventually that some languages can be considered Object-Oriented and some others Functional. What do these categories mean and why are they significant?
+        </p>
+        <p>
+          Let's start with OO as this is one of DBCs specialties. OO programming organizes its data and functions into Objects. That is, we can create new instances of Classes (a new Object) and define their actions with methods. In many ways we essentially treat the Object as a noun of a program and methods are verbs that act on the noun. The fundamental unit in OO programming is the Object, which can be divided into other Objects .
+        </p>
+        <p>
+          Functional programming on the other hand does not use Objects to store data. Instead, it relies on a series of functions that combine and ultimately deliver the answer for a user. Concurrently, data that has been assigned a value are considered immutable and can't be changed. Functions can also stand on their own as data can be operated on freely without an Object. This is much like a math function.
+        </p>
+        <p>
+          There are times when either the OO or FP paradigm is preferable. To this, I found a <a href="https://stackoverflow.com/questions/2078978/functional-programming-vs-object-oriented-programming">StackOverflow answer</a> that sums it up well.
+        </p>
+        <blockquote>
+        <p>
+          "When you anticipate a different kind of software evolution:
+        </p>
+        <p>
+          - Object-oriented languages are good when you have a fixed set of operations on things, and as your code evolves, you primarily add new things. This can be accomplished by adding new classes which implement existing methods, and the existing classes are left alone.
+        </p>
+        <p>
+          - Functional languages are good when you have a fixed set of things, and as your code evolves, you primarily add new operations on existing things. This can be accomplished by adding new functions which compute with existing data types, and the existing functions are left alone.
+        </p>
+        <p>
+          When evolution goes the wrong way, you have problems:
+        </p>
+        <p>
+          - Adding a new operation to an object-oriented program may require editing many class definitions to add a new method.
+        </p>
+        <p>
+          - Adding a new kind of thing to a functional program may require editing many function definitions to add a new case."
+        </p>
+        </blockquote>
+        <p>
+          It seems that OO is not necessarily superior nor inferior to FP. Rather, they serve different roles and to choose one or the other is dependent on what kind of project the developer is engaged in. Sure, one type could probably do a lot of things the other can do functionally speaking, though perhaps at the expense of effectiveness.
+        </p>
+      </div>
+  </section>
+
+  <a href="viewmoreposts.html"><button>View More Posts</button></a>
+</main>
+
+</html>
