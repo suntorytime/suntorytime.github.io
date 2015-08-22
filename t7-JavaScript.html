@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+    For Relaxing Times, Make It Coding Time
+    </title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+
+<body>
+
+    <nav>
+      <ul>
+          <li class="navpoint"><a href="index.html">Home</a></li>
+          <li class="navpoint"><a href="about.html">About</a></li>
+          <li class="navpoint"><a href="blog.html">Blog</a></li>
+          <li class="navpoint"><a href="viewmoreposts.html">Archive</a></li>
+          <li class="navpoint"><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+
+<main>
+  <section class="blog-post-template">
+    <h1>Post</h1>
+     <img src="imgs/java.jpg" width="170px" />
+      <div>
+        <header class="blog-post-template-header">
+          <div class="topic">
+          Technical
+          </div>
+          <div class="featured_post_title">
+            Have a Cup of JavaScript
+          </div>
+          <h2><em>by</em> Santa Maria, Steven * August 21, 2015</h2>
+        </header>
+        <p>
+          Recently in our Dev Bootcamp course, we jumped out of the world of Ruby and plopped into Javascript. There are definitely many similarities between Ruby and JavaScript thankfully; and as a result, making the syntatic and logical transition from the former is easier than I expected. One difference, however, that caught my attention was the relationship between Ruby hashes and JavaScript objects.
+</p>
+<p>
+          Ruby can easily employ a type of data structure called a hash. Hashes contain key-value pairs, which can be transformed. Here is an example of a Ruby hash:
+</p>
+<p>
+<code>
+          grades = { "Jane Doe" => 10, "Jim Doe" => 6 }
+</code>
+</p>
+<p>
+          In this example, "grades" is our hash name; "Jane Doe" and "Jim Doe" are our keys; and "10" and "6" are their values respectively.
+</p>
+<p>
+          JavaScript uses array data structures quite well, but hash data structures are another story. Hashes data structures in JavaScript are difficult to create and are rarely used.
+</p>
+<p>
+          What I noticed though was that JavaScript objects are themselves (like) hashes. Let's look an example of a JavaScript object:
+</p>
+<p>
+  <code>
+          var teaMaster = {<br>
+            weight: 140,<br>
+            hasTeaBowl: true,<br>
+            hasBambooWhisk: true,<br>
+          }
+        </code>
+</p>
+<p>
+          Looks reminiscent of our data hashes in Ruby, doesn't it? Another key difference is that we can dynamically add properties to the object e.g.
+</p>
+<p>
+  <code>
+          teaMaster["age"] = 74;
+</code>
+</p>
+<p>
+          Doing so would add the new property "age" and its value "74" to the teaMaster object at runtime.
+</p>
+<p>
+          Learning Ruby and JavaScript have the inherent challenges of wrapping our heads around different syntax. However, it also carries the challenge of figuring out the capabilities, limitations, and logical differences between the two.
+        </p>
+      </div>
+  </section>
+
+  <a href="viewmoreposts.html"><button>View More Posts</button></a>
+</main>
+
+</html>
