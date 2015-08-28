@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+    For Relaxing Times, Make It Coding Time
+    </title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+
+<body>
+
+    <nav>
+      <ul>
+          <li class="navpoint"><a href="index.html">Home</a></li>
+          <li class="navpoint"><a href="about.html">About</a></li>
+          <li class="navpoint"><a href="blog.html">Blog</a></li>
+          <li class="navpoint"><a href="viewmoreposts.html">Archive</a></li>
+          <li class="navpoint"><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+
+<main>
+  <section class="blog-post-template">
+    <h1>Post</h1>
+     <img src="imgs/sql_inj.jpg" width="170px" />
+      <div>
+        <header class="blog-post-template-header">
+          <div class="topic">
+            Cultural
+          </div>
+          <div class="featured_post_title">
+            SQL Injection
+          </div>
+          <h2><em>by</em> Santa Maria, Steven * August 28, 2015</h2>
+        </header>
+        <p>
+          In light of the recent scandal facing Ashley Madison, we can log yet another episode of hacking on a massive scale. It seems to me that there's been one of these hacking stories at least once every several months. However, it's not just the "big guys" who are vulnerable--it's also smaller websites that are at risk.
+        </p>
+        <p>
+          One common hacking tool I'd like to highlight is SQL Injection. As the name implies, it relies on a hacker to use SQL statements to query and even change the databases that support web apps.
+        </p>
+        <p>
+          For example, let's say we had login form for a web app. Behind most forms are SQL statements kind of like this:
+        </p>
+        <code>
+          SELECT * FROM users WHERE username = "Some-Name"
+        </code>
+        <p>
+          If we were somebody with malicious intent, we could add an extra quotation mark and put additional commands into the username field of the form:
+        </p>
+        <code>
+          Chris""; DELETE * FROM table_name;
+        </code>
+        <p>
+          This results in the true SQL statement below:
+        </p>
+        <code>
+          SELECT * FROM users WHERE username = "Chris""; DELETE * FROM table_name;
+        </code>
+        <p>
+          Essentially what we're doing here is deleting all records from a table.
+        </p>
+        <p>
+          How do we counter this? We can use escapes like putting a \ before quotations before the command is sent to the database. We can also use "<a href="https://en.wikipedia.org/wiki/Prepared_statement">prepared statements</a>."
+        </p>
+        <p>
+          SQL injections are devastatingly simple in their execution and represent a major vulnerability in how database querying is performed. As developers and as we launch a web app, it'll be imperative to check for these weaknesses else risk our careers.
+        </p>
+      </div>
+  </section>
+
+  <a href="viewmoreposts.html"><button>View More Posts</button></a>
+</main>
+
+</html>

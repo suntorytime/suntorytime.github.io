@@ -15,6 +15,10 @@ nav {
   left: 0;
 }
 
+li {
+  font-family: helvetica;
+}
+
 li.navpoint {
   display: inline-block;
   width: 80px;
@@ -72,10 +76,6 @@ p {
 p.other_post_description {
   width: 260px;
   height: 105px;
-}
-
-li {
-  font-family: helvetica;
 }
 
 section.featured {
