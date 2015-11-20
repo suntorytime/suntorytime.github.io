@@ -2,6 +2,7 @@ main {
   width: 600px;
   margin-left: 20%;
   margin-right: 20%;
+  margin-bottom: 3%;
 }
 
 nav {
@@ -128,7 +129,7 @@ img.other_pictures {
 }
 
 body#background_profile {
-  background-image: url(imgs/profile-home.jpg);
+  background-image: url(imgs/profile-home.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -171,4 +172,15 @@ code {
   padding-right: 20px;
   float:left;
   width: 45%;
+}
+
+/*PROJECT page*/
+.screenshots-container {
+  width: 100%;
+  height: auto;
+}
+
+.screenshot {
+  max-width:100%;
+  max-height:100%;
 }
