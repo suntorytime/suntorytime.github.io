@@ -1,0 +1,42 @@
+.intro {
+  background-image: url('../imgs/intro-back2.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  margin-top: 6.5rem;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.section {
+  margin-bottom: 5rem;
+}
+
+.profile {
+  border-radius: 50%;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 6.5rem;
+  background: white;
+  z-index: 99;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee
+}
+
+.navbar-list {
+  list-style: none;
+}
+
+.navbar-item {
+float: left;
+margin-bottom: 0;
+margin-right: 35px;
+/*position: relative;*/
+}
+
