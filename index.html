@@ -1,25 +1,137 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>
-    For Relaxing Times, Make It Coding Time
-    </title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-  </head>
-<body id="background_profile">
+<html lang="en">
+<head>
 
-      <nav>
-        <ul>
-          <li class="navpoint"><a href="index.html">Home</a></li>
-          <li class="navpoint"><a href="about.html">About</a></li>
-          <li class="navpoint"><a href="blog.html">Blog</a></li>
-          <li class="navpoint"><a href="viewmoreposts.html"> Archive</a></li>
-          <li class="navpoint"><a href="projects.html">Projects</a></li>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Suntorytime</title>
+  <meta name="description" content="Steven's landing page">
+  <meta name="author" content="Steven Santa Maria">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.js"></script>
+
+  <script type="text/javascript">
+
+  $(document).ready(function() {
+    var nav = $('.navbar');
+    var banner = $('.header');
+    var pos = nav.position();
+
+      $(window).scroll(function() {
+        var windowpos = $(window).scrollTop();
+        if (windowpos >= banner.outerHeight()) {
+            nav.addClass('sticky');
+        }
+        else {
+            nav.removeClass('sticky');
+        }
+      });
+
+      $(window).on("hashchange", function() {
+        window.scrollTo(window.scrollX, window.scrollY - 99);
+      })
+  });
+  </script>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="section header">
+    <div class="container">
+      <div class="header-title">
+        <h1>Steven Santa Maria</h1>
+        <p>full-stack web developer & japanese sake specialist</p>
+      </div>
+    </div>
+  </div>
+
+  <div class = "container">
+    <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="#about">About</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#pocket-sf">Pocket SF</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#mate">Mate</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
         </ul>
-      </nav>
-        <section id="home_text_overlay">
-          <h1>Steven Santa Maria</h1>
-          <p>Full Stack Web Developer | Sake Professional</p>
-        </section>
+    </nav>
+
+    <div class="section about nav-trigger" id="about">
+      <div class="row">
+        <img src="imgs/profile-1.png" alt="" class="profile section">
+        <p>Native San Franciscan, UC Davis Microbiology grad, Full Stack Web Developer student at Dev Bootcamp, certified Japanese sake specialist. These are just some of the things that define me as I make the transition from biotech to tech.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="section pocket-sf" id="pocket-sf">
+      <div class="row">
+        <div class="four columns">
+          <h2>Pocket San Francisco</h2>
+          <a href="https://www.pocketsf.io" class="button">Live App</a>
+          <a href="http://apps.sfgov.org/showcase/apps/pocketsf/" class="button">SF Gov Showcase</a>
+          <a href="https://github.com/scaulfield01/pocketSF" class="button">Repo</a>
+        </div>
+        <div class="eight columns">
+          <p>Pocket SF is a responsive web app that leverages public city data and Google Maps to find practical resources in SF</p>
+          <p>Developed full-stack with Javascript, Meteor.js, Bootstrap, Socrata API, Google Maps API, MongoDB, Cordova</p>
+          <img src="imgs/pocketsf3.png" alt="" class="u-max-full-width">
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="section mate" id="mate">
+      <div class="row">
+        <div class="four columns">
+          <h2>Mate</h2>
+          <a href="https://github.com/suntorytime/project-mate" class="button">Repo</a>
+        </div>
+        <div class="eight columns">
+          <p>Mate is a responsive web app that helps users remember their new and existing friends through guided note-taking</p>
+          <p>Developed full-stack with Ruby, Sinatra, Pure</p>
+          <img src="imgs/mate1.png" alt="" class="u-max-full-width">
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="section contact u-full-width" id="contact">
+      <h2>Contact</h2>
+      <a href="https://www.linkedin.com/in/ssantamaria
+" class="button">LinkedIn</a>
+      <a href="https://github.com/suntorytime" class="button">Github</a>
+      <a href="mailto:stevensm90@gmail.com" class="button">Email</a>
+    </div>
+
+  </div>
+
+<!-- <div class="section contact">
+  <div class="container">
+    <div class="row">
+
+    </div>
+  </div>
+</div> -->
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>

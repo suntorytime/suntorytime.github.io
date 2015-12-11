@@ -1,0 +1,68 @@
+.header {
+  background-image: url('../imgs/intro-back2.jpg');
+  background-size: cover;
+  height: 50rem;
+  background-position: center;
+}
+
+.header-title {
+  /*position: absolute;*/
+  padding-top: 15rem;
+  color: #fff;
+  text-align: center;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.profile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 200px;
+  border-radius: 50%;
+}
+
+.contact {
+  text-align: center;
+}
+
+.navbar {
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: 4rem;
+  padding: 0.5rem;
+  background: white;
+  text-align: center;
+}
+
+.body-sticky {
+  padding-top: 4rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  display: block;
+  z-index: 99;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee
+}
+
+.navbar-list {
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar-item {
+float: left;
+margin-bottom: 0;
+margin-right: 35px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  text-transform: uppercase;
+}
